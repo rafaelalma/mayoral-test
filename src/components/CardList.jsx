@@ -1,5 +1,4 @@
-import "./CardList.css";
-import Card from "../Card";
+import Card from "./Card";
 
 export default function CardList({ cards }) {
   return (
