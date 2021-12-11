@@ -6,7 +6,12 @@ export default function CardList({ cards }) {
       {cards.map((card) => {
         return (
           <li key={card.id}>
-            <Card image={card.image} title={card.title} price={card.price} />
+            <Card
+              id={card.id}
+              image={card.image}
+              title={card.title}
+              price={card.price}
+            />
           </li>
         );
       })}
