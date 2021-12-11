@@ -82,6 +82,10 @@ const shirts = [
   },
 ];
 
-const json = JSON.stringify(shirts);
+export function getShirts() {
+  return shirts;
+}
 
-export default json;
+export function getShirt(id) {
+  return shirts.find((shirt) => shirt.id === id);
+}
