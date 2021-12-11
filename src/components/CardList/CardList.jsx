@@ -3,7 +3,7 @@ import Card from "../Card";
 
 export default function CardList({ cards }) {
   return (
-    <div className="CardList">
+    <ul className="CardList">
       {cards.map((card) => {
         return (
           <li key={card.id}>
@@ -11,6 +11,6 @@ export default function CardList({ cards }) {
           </li>
         );
       })}
-    </div>
+    </ul>
   );
 }
