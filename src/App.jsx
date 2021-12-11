@@ -1,13 +1,22 @@
 import React from "react";
-import CardList from "./components/CardList";
-import SearchForm from "./components/SearchForm";
-import json from "./data/shirts.js";
+import { NavLink, Outlet } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <SearchForm />
-      <CardList cards={JSON.parse(json)} />
+      <nav>
+        <ul>
+          <li>
+            <NavLink to="/">Inicio</NavLink>
+          </li>
+          <li>
+            <NavLink to="/search">Búsqueda</NavLink>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <Outlet />
+      </main>
     </div>
   );
 }
