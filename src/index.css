@@ -13,7 +13,11 @@ body {
   padding: 20px;
 }
 
-.SearchForm {
+.active {
+  font-weight: bold;
+}
+
+.Search {
   padding: 20px;
 
   display: flex;
@@ -55,6 +59,7 @@ body {
 
 .Card {
   border: 1px solid black;
+  border-radius: 3px;
   padding: 20px;
 
   display: flex;
