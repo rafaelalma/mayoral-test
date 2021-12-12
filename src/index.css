@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("./assets/fonts/Nunito-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("./assets/fonts/Nunito-Italic.woff") format("woff");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("./assets/fonts/Nunito-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+
 :root {
   --primary-color: rgb(1, 114, 234);
   --text-color: rgb(59, 52, 51);
@@ -10,7 +31,7 @@
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: var(--text-color);
 }
@@ -52,6 +73,7 @@ body {
   font-size: 16px;
   background-color: white;
   transition: background-color 140ms ease-in-out;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
 }
 
 .search-input:hover {
@@ -99,6 +121,7 @@ body {
   font-size: 16px;
   color: white;
   cursor: pointer;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
 }
 
 .colors {
@@ -114,7 +137,7 @@ body {
 
 .plus {
   color: var(--primary-color);
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .discount {
