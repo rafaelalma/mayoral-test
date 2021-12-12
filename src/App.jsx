@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <nav>
@@ -20,5 +20,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

@@ -85,7 +85,3 @@ const shirts = [
 export function getShirts() {
   return shirts;
 }
-
-export function getShirt(id) {
-  return shirts.find((shirt) => shirt.id === id);
-}
