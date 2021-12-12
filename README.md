@@ -1,5 +1,7 @@
 # Mayoral Technical Test
 
+Fetchs data from a static json in public (development) and build (production) folders.
+
 Requires [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/)
 
 ## How to start
