@@ -3,25 +3,31 @@ import { formatNumber } from "../utils/format.js";
 export default function Card({ image, title, price, discount, hasMoreColors }) {
   return (
     <div className="Card">
-      <img src={image} alt={title} className="card-img" />
-      <p>{title}</p>
+      <div>
+        <img src={image} alt={title} className="card-img" />
+        <p>{title}</p>
+        {discount ? (
+          <div>
+            <p>
+              <del>{price} €</del>
+            </p>
+            <p className="discount">
+              {formatNumber(price - price * discount)} € (-{discount * 100}%)
+            </p>
+          </div>
+        ) : (
+          <p>{price} €</p>
+        )}
+      </div>
 
-      {discount ? (
-        <div>
-          <p>
-            <del>{price} €</del>
+      <div>
+        {hasMoreColors ? (
+          <p className="colors">
+            <span className="plus">+</span> Más colores
           </p>
-          <p>
-            {formatNumber(price - price * discount)} € (-{discount * 100}%)
-          </p>
-        </div>
-      ) : (
-        <p>{price} €</p>
-      )}
-
-      {hasMoreColors ? <p>más colores</p> : null}
-
-      <button className="btn">AÑADIR</button>
+        ) : null}
+        <button className="card-btn">AÑADIR</button>
+      </div>
     </div>
   );
 }

@@ -5,12 +5,16 @@ export default function App() {
   return (
     <div className="App">
       <nav>
-        <ul>
+        <ul className="navigation">
           <li>
-            <NavLink to="/">Inicio</NavLink>
+            <NavLink to="/" className="nav-link">
+              Inicio
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/search">Búsqueda</NavLink>
+            <NavLink to="/search" className="nav-link">
+              Búsqueda
+            </NavLink>
           </li>
         </ul>
       </nav>
