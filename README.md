@@ -1,6 +1,6 @@
 # Mayoral Technical Test
 
-Fetchs data from a static json in public (development) and build (production) folders.
+Required images and data.json are in the public folder in order to be able to change the data without the need to rebuild the app.
 
 Requires [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/)
 
