@@ -15,7 +15,8 @@ const shirts = [
     image: shirt1,
     title: "Polo manga larga vestir niño",
     price: 24.99,
-    discount: 0,
+    discount: 0.2,
+    hasMoreColors: true,
   },
   {
     id: 2,
@@ -23,13 +24,15 @@ const shirts = [
     title: "Polo manga larga print niño",
     price: 22.99,
     discount: 0,
+    hasMoreColors: true,
   },
   {
     id: 3,
     image: shirt3,
     title: "Polo manga larga combinado niño",
     price: 22.99,
-    discount: 0,
+    discount: 0.1,
+    hasMoreColors: true,
   },
   {
     id: 4,
@@ -37,13 +40,15 @@ const shirts = [
     title: "Polo ECOFRIENDS manga larga skate niño",
     price: 24.99,
     discount: 0,
+    hasMoreColors: false,
   },
   {
     id: 5,
     image: shirt5,
     title: "Polo manga larga print niño",
     price: 22.99,
-    discount: 0,
+    discount: 0.3,
+    hasMoreColors: true,
   },
   {
     id: 6,
@@ -51,6 +56,7 @@ const shirts = [
     title: "Polo ECOFRIENDS manga larga estampado niño",
     price: 22.99,
     discount: 0,
+    hasMoreColors: true,
   },
   {
     id: 7,
@@ -58,13 +64,15 @@ const shirts = [
     title: "Polo ECOFRIENDS manga larga skate niño",
     price: 22.99,
     discount: 0,
+    hasMoreColors: false,
   },
   {
     id: 8,
     image: shirt8,
     title: "Polo rugby banda diagonal niño",
     price: 22.99,
-    discount: 0,
+    discount: 0.2,
+    hasMoreColors: true,
   },
   {
     id: 9,
@@ -72,6 +80,7 @@ const shirts = [
     title: "Polo ECOFRIENDS manga larga niño",
     price: 22.99,
     discount: 0,
+    hasMoreColors: true,
   },
   {
     id: 10,
@@ -79,6 +88,7 @@ const shirts = [
     title: "Polo manga larga desagujado blocking niño",
     price: 24.99,
     discount: 0,
+    hasMoreColors: true,
   },
 ];
 
