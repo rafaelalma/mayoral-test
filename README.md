@@ -15,8 +15,8 @@ npm start
 
 From a GitHub downloaded .zip:
 
-1 Extract from mayoral-test-main.zip
-2 Navigate to mayoral-test-main and run
+1. Extract from mayoral-test-main.zip
+2. Navigate to mayoral-test-main and run
 
 ```
 npm install
@@ -38,9 +38,9 @@ Tested in `Mozilla Firefox v94.0` for Ubuntu (development and production builds)
 
 ### Installed packages
 
-[Serve](https://www.npmjs.com/package/serve)
-
 [React Router v6](https://reactrouter.com/)
+
+[Serve](https://www.npmjs.com/package/serve)
 
 ### Create React App
 
