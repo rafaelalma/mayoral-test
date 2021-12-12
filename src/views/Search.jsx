@@ -1,10 +1,15 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useSearchParams } from "react-router-dom";
 import CardList from "../components/CardList";
 
 export default function Search() {
   const [searchParams, setSearchParams] = useSearchParams();
   const [results, setResults] = useState([]);
+  const input = useRef();
+
+  useEffect(() => {
+    input.current.focus();
+  }, []);
 
   useEffect(() => {
     (async () => {
@@ -38,8 +43,9 @@ export default function Search() {
   return (
     <>
       <div className="Search">
-        <label htmlFor="search-input" className="search-label">
+        <label htmlFor="search-input">
           <input
+            ref={input}
             value={searchParams.get("query") || ""}
             onChange={handleQueryChange}
             type="text"
